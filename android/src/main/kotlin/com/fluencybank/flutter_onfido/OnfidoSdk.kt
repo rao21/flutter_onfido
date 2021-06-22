@@ -158,7 +158,7 @@ class OnfidoSdk(var currentFlutterResult: MethodChannel.Result?, var activityLis
 
 
     fun findCountryCodeByAlpha3(countryCodeString: String): CountryCode? {
-        var countryCode: CountryCode? = CountryCode.valueOf("BH")
+        var countryCode: CountryCode? = CountryCode.BH
         for (cc in CountryCode.values()) {
             if (cc.alpha3 == countryCodeString) {
                 countryCode = cc
